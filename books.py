@@ -8,5 +8,5 @@ def add_book(book_id, title, author, quantity):
         "quantity": quantity
     })
 
-def view_books():
+def get_all_books():
     return books

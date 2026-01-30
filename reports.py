@@ -1,4 +1,4 @@
-from issue_book import issued_books
+from issue_return import issued_books
 from members import members
 
 def issued_books_report():

@@ -2,6 +2,11 @@ from datetime import date, timedelta
 from data import books
 from members import members
 from fine_calculator import calculate_fine
+def check_fine(book_id, member_id):
+    for record in issued_books:
+        if record["book_id"] == book_id and record["member_id"] == member_id:
+            return calculate_fine(record["due_date"])
+    return None
 
 issued_books = []
 

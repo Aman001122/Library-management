@@ -8,5 +8,5 @@ def add_member(member_id, name):
         "fine": 0
     })
 
-def view_members():
+def get_all_members():
     return members
